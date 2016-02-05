@@ -7,10 +7,9 @@ $(document).ready(function(){$("button").click(function(){
 
 var uval= $('#stk').val();
 
-var ur="https://stockvider.p.mashape.com/indicator/DATA/"+uval+"/";
+var ur="http://www.google.com/finance/info?q="+uval;
 
-$.ajax({'url':ur,'type':'GET','headers':{'X-Mashape-Key':
-	'Bs5BvTwMeNmshIVgyxatfWRfPMkNp1Dmi30jsnLUNZ8zyDyBW8'},success:function(result){
+$.ajax({'url':ur,'type':'GET',success:function(result){
 
 
 var context = {title:result};
